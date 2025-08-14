@@ -5,7 +5,7 @@ Privacy policy: https://denbachieu.github.io/PrivacyPolicies/AutoCalendarPrivacy
 
 Terms of service: https://denbachieu.github.io/PrivacyPolicies/AutoCalendarToS
 
-Using Gemini 2.5 Flash-Lite combined with prompt engineering, your input will be converted into events. You then can check the events and confirm to add it to a newly created calendar in your Google's Calendar.
+Using Gemini AI combined with prompt engineering, your input will be converted into events. You then can check the events and confirm to add it to a newly created calendar in your Google's Calendar.
 
 You can filter out the input but make sure you still include the table's headers or any indication for what each data means.
 
