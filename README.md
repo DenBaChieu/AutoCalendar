@@ -1,16 +1,38 @@
-# AutoCalendarFrontend
-A website that uses AI to convert your schedule into your Google's Calendar
+# AutoCalendarFrontend  
+A web app that uses AI to convert your schedule into a Google Calendar.  
 
-Privacy policy: https://denbachieu.github.io/PrivacyPolicies/AutoCalendarPrivacyPolicy
+---
 
-Terms of service: https://denbachieu.github.io/PrivacyPolicies/AutoCalendarToS
+## Features  
+- Converts raw schedules into events using **Gemini AI + prompt engineering**  
+- Lets you **review and confirm** events before adding them  
+- Creates a **new calendar** in your Google account to keep events separate  
+- Supports filtering input (requires headers or indicators for event data)  
 
-Using Gemini AI combined with prompt engineering, your input will be converted into events. You then can check the events and confirm to add it to a newly created calendar in your Google's Calendar.
+---
 
-You can filter out the input but make sure you still include the table's headers or any indication for what each data means.
+## How It Works  
+1. Paste your schedule into the app.  
+2. AI extracts dates, times, and event details.  
+3. Review and confirm before adding to Google Calendar.  
+4. Events are added to a newly created calendar in your Google account.  
 
-Backend is hosted on Render. Your credentials is only temporarily stored on the backend for at most 15 minutes.
+---
 
-Our Google's Calendar scope is only "https://www.googleapis.com/auth/calendar.app.created" which means that we are only allowed to create a "calendar" on your Google's Calendar then add, edits, remove events on that "calendar" specifically.
+## Privacy & Security  
+- Backend is hosted on **Render**.  
+- Your credentials are only temporarily stored (up to 15 minutes).  
+- We only request the Google Calendar scope:  
+  `https://www.googleapis.com/auth/calendar.app.created`  
+  This limits access to only the new calendar created by the app.  
 
-This website was coded using Vite + React + Tailwind. Backend is coded in Python using Flask.
+[Privacy Policy](https://denbachieu.github.io/PrivacyPolicies/AutoCalendarPrivacyPolicy)  
+[Terms of Service](https://denbachieu.github.io/PrivacyPolicies/AutoCalendarToS)  
+
+---
+
+## Tech Stack  
+- **Frontend:** Vite, React, Tailwind CSS  
+- **Backend:** Python (Flask), hosted on Render  
+- **AI:** Gemini AI  
+- **API:** Google Calendar API  
